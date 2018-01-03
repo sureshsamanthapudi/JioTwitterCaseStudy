@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/fab_margin">
+
+
+    <RelativeLayout
+        android:id="@+id/rlImageView"
+        android:layout_width="@dimen/dimen_circle_layoutsize"
+        android:layout_height="@dimen/dimen_circle_layoutsize">
+
+        <example.com.jiotwittercasestudy.ui.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_height="@dimen/dimen_circle"
+            android:layout_width="@dimen/dimen_circle"
+            android:scaleType="fitCenter"
+            app:riv_corner_radius="@dimen/dimen_30"
+            app:riv_border_width="@dimen/dimen_2"
+            app:riv_border_color="@color/color_dark"
+            app:riv_mutate_background="true"
+            app:riv_tile_mode="repeat"
+            app:riv_oval="true" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_circle"
+        android:layout_toRightOf="@id/rlImageView"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dime_28"
+            android:layout_marginStart="@dimen/dime_28"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvTimeStamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dime_28"
+            android:layout_marginStart="@dimen/dime_28"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlImageView">
+
+        <TextView
+            android:id="@+id/tvTweetText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_below="@id/rlText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@color/color_dark"
+        android:visibility="visible" />
+</RelativeLayout>

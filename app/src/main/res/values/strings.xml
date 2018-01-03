@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">JioTwitterCaseStudy</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tweets_no_data">No Tweets</string>
+    <string name="label_tag_name">#%1$s</string>
+    <string name="title_activity_hash_tag_tweets">HashTagTweetsActivity</string>
+</resources>

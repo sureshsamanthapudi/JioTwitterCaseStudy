@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appBarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:elevation="0dp">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_background"
+        android:minHeight="@dimen/hash_actionbar_height"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvToolbarTitle"
+                style="@style/TitleText"
+                android:text="First Name"
+                android:textSize="@dimen/label_title_text_size"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+</android.support.design.widget.AppBarLayout>
